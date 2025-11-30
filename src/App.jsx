@@ -5,9 +5,17 @@ import ProductoConDescuento from './ProductoConDescuento';
 import ContadorLikes from './ContadorLikes';
 import FormularioContacto from './FormularioContacto';
 import ToggleTema from './ToggleTema';
+import { useState } from 'react';
 
 function App() {
+
+ const [Likes, setLikes] = useState(0);
+
+
   return (
+
+
+    
     <div className="app">
       <h1>Tarea de Componentes React</h1>
       <p className="app-descripcion">

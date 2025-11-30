@@ -30,20 +30,21 @@ TAREAS A COMPLETAR - ContadorLikes
 import React, { useState } from 'react';
 import './ContadorLikes.css';
 
+
 function ContadorLikes() {
   const [likes, setLikes] = useState(0);
 
   const manejarLike = () => {
-    setLikes(likes + 1);
+    if (likes >=0){setLikes(Likes =+1)};
   };
 
   const manejarDislike = () => {
-    setLikes(likes - 1); // Podría quedar en negativo, pueden mejorar esto
+    if (likes >=0){setLikes(Likes =-1)}; // Podría quedar en negativo, pueden mejorar esto
   };
 
   // BUG SUAVE: aquí se usa > 10, las tareas piden >= 10
   const mensajePopularidad =
-    likes > 10 ? 'Muy popular' : 'Poco popular';
+    likes >= 10 ? 'Muy popular' : 'Poco popular';
 
   return (
     <div className="contador">
