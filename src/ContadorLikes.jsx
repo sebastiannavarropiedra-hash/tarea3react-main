@@ -35,11 +35,11 @@ function ContadorLikes() {
   const [likes, setLikes] = useState(0);
 
   const manejarLike = () => {
-    if (likes >=0){setLikes(Likes =+1)};
+    if (likes >=0){setLikes(likes +1)};
   };
 
   const manejarDislike = () => {
-    if (likes >=0){setLikes(Likes =-1)}; // Podría quedar en negativo, pueden mejorar esto
+    if (likes >0){setLikes(likes -1)}; // Podría quedar en negativo, pueden mejorar esto
   };
 
   // BUG SUAVE: aquí se usa > 10, las tareas piden >= 10
