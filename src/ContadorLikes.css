@@ -1,0 +1,32 @@
+.contador {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 12px;
+  max-width: 260px;
+  background-color: #fff;
+}
+
+.contador-likes {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.contador-mensaje {
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+}
+
+.contador-botones button {
+  margin-right: 6px;
+  padding: 6px 10px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  background-color: #388e3c;
+  color: #fff;
+  font-size: 0.85rem;
+}
+
+.contador-botones button:last-child {
+  background-color: #d32f2f;
+}

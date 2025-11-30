@@ -1,0 +1,40 @@
+.producto {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 12px;
+  max-width: 260px;
+  background-color: #fff;
+}
+
+.producto-nombre {
+  margin: 0 0 8px;
+  font-size: 1.05rem;
+}
+
+.producto-imagen {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.producto-precio {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.producto-oferta {
+  font-size: 0.9rem;
+  color: #c2185b;
+  margin-bottom: 8px;
+}
+
+.producto-boton {
+  padding: 6px 10px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  background-color: #1976d2;
+  color: #fff;
+  font-size: 0.9rem;
+}
