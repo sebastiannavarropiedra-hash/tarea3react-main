@@ -9,17 +9,17 @@ import { useState } from 'react';
 
 function App() {
 
- const [Likes, setLikes] = useState(0);
-
+  const [Likes, setLikes] = useState(0);
+ 
 
   return (
 
 
-    
+
     <div className="app">
       <h1>Tarea de Componentes React</h1>
       <p className="app-descripcion">
-        Completa las tareas indicadas en cada componente. 
+        Completa las tareas indicadas en cada componente.
         Arregla los pequeños bugs y haz que todo funcione correctamente.
       </p>
 

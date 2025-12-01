@@ -28,22 +28,25 @@ import React, { useState } from 'react';
 import './FormularioContacto.css';
 
 function FormularioContacto() {
+
   const [nombre, setNombre] = useState('');
   const [email, setEmail] = useState('');
   const [mensaje, setMensaje] = useState('');
-
   // De momento, no hay onSubmit, solo onChange
   const manejarCambioNombre = (evento) => {
+    setNombre(evento.target.value);
     // TODO: Actualizar el estado nombre con evento.target.value
     // setNombre(evento.target.value);
   };
 
   const manejarCambioEmail = (evento) => {
+    setEmail(evento.target.value);
     // TODO: Actualizar el estado email con evento.target.value
     // setEmail(evento.target.value);
   };
 
   const manejarCambioMensaje = (evento) => {
+    setMensaje(evento.target.value);
     // TODO: Actualizar el estado mensaje con evento.target.value
     // setMensaje(evento.target.value);
   };
@@ -60,8 +63,8 @@ function FormularioContacto() {
             id="nombre"
             name="nombre"
             placeholder="Escribe tu nombre"
-            // value={nombre}
-            // onChange={manejarCambioNombre}
+            value={nombre}
+            onChange={manejarCambioNombre}
           />
         </div>
 
@@ -72,8 +75,8 @@ function FormularioContacto() {
             id="email"
             name="email"
             placeholder="Escribe tu email"
-            // value={email}
-            // onChange={manejarCambioEmail}
+           value={email}
+           onChange={manejarCambioEmail}
           />
         </div>
 
@@ -84,8 +87,8 @@ function FormularioContacto() {
             name="mensaje"
             placeholder="Escribe tu mensaje"
             rows={4}
-            // value={mensaje}
-            // onChange={manejarCambioMensaje}
+           value={mensaje}
+           onChange={manejarCambioMensaje}
           />
         </div>
       </form>
@@ -93,13 +96,13 @@ function FormularioContacto() {
       <div className="preview-contacto">
         <h4>Vista Previa:</h4>
         <p>
-          <strong>Nombre:</strong> {/* {nombre} */}
+          <strong>Nombre:</strong>  {nombre} 
         </p>
         <p>
-          <strong>Email:</strong> {/* {email} */}
+          <strong>Email:</strong>  {email} 
         </p>
         <p>
-          <strong>Mensaje:</strong> {/* {mensaje} */}
+          <strong>Mensaje:</strong>  {mensaje} 
         </p>
       </div>
     </div>
