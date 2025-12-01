@@ -28,26 +28,26 @@ import './ToggleTema.css';
 function ToggleTema({ titulo, descripcion }) {
   const [esOscuro, setEsOscuro] = useState(false);
 
- const manejarToggleTema = () => {
-  if (esOscuro === true) {
-    setEsOscuro(false);
-  } else {
-    setEsOscuro(true);
-  }
-};
+  const manejarToggleTema = () => {
+    if (esOscuro === true) {
+      setEsOscuro(false);
+    } else {
+      setEsOscuro(true);
+    }
+  };
 
-const clasesTarjeta = esOscuro ? 'tarjeta tarjeta-oscura' : 'tarjeta tarjeta-clara';
+  const clasesTarjeta = esOscuro ? 'tarjeta tarjeta-oscura' : 'tarjeta tarjeta-clara';
 
-// BUG SUAVE: el texto está invertido a propósito
-const textoBoton = esOscuro ? 'Cambiar a modo claro' : 'Cambiar a modo oscuro';
+  // BUG SUAVE: el texto está invertido a propósito
+  const textoBoton = esOscuro ? 'Cambiar a modo claro' : 'Cambiar a modo oscuro';
 
-return (
-  <div className={clasesTarjeta}>
-    <h3>{titulo}</h3>
-    <p>{descripcion}</p>
-    <button onClick={manejarToggleTema}>{textoBoton}</button>
-  </div>
-);
+  return (
+    <div className={clasesTarjeta}>
+      <h3>{titulo}</h3>
+      <p>{descripcion}</p>
+      <button onClick={manejarToggleTema}>{textoBoton}</button>
+    </div>
+  );
 }
 
 export default ToggleTema;
