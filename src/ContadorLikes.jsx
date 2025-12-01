@@ -32,6 +32,7 @@ import './ContadorLikes.css';
 
 
 function ContadorLikes() {
+  
   const [likes, setLikes] = useState(0);
 
   const manejarLike = () => {
