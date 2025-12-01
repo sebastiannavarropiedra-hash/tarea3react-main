@@ -37,11 +37,11 @@ function ProductoConDescuento({ nombre, precioOriginal, porcentajeDescuento, ima
   const [descuentoAplicado, setDescuentoAplicado] = useState(false);
 
   // BUG SUAVE: este cálculo NO es el correcto, hay que corregirlo según las tareas
-  const precioConDescuento = precioOriginal - porcentajeDescuento;
+  const precioConDescuento = precioOriginal - ( precioOriginal * porcentajeDescuento / 100 );
 
   // BUG SUAVE: este ternario está invertido a propósito
   const ofertaMensaje =
-    porcentajeDescuento > 30 ? 'Oferta estándar' : '¡Súper oferta!';
+    porcentajeDescuento >= 30 ? '¡Super Oferta!' :'Oferta Estandar' ;
 
   const manejarAplicarDescuento = () => {
     setDescuentoAplicado(true);

@@ -29,7 +29,7 @@ function App() {
           nombre="Laptop Gamer"
           precioOriginal={1500}
           porcentajeDescuento={40}
-          imagen="https://via.placeholder.com/200x150?text=Laptop"
+          imagen="https://img.freepik.com/premium-photo/laptop-with-blank-white-screen-ready-use-as-placeholder-image_153912-402403.jpg?w=360"
         />
       </div>
 
